@@ -23,6 +23,13 @@
 
     //ask Gender question, answer: No
     var genderAnswer = prompt('Am I a male?');
+    if (genderAnswer.toUpperCase() === 'YES' || genderAnswer.toUpperCase() === 'Y') {
+        alert('Good try, but I am a female');
+    } else if (genderAnswer.toUpperCase() === "NO" || genderAnswer.toUpperCase() === 'N') {
+        alert('Good job, I am a female');
+    } else {
+        alert('That was not a "yes" or "no" answer');
+    }
     console.log('User\'s answer to if I am a male: ' + genderAnswer)
 
     //ask food question, answer: Yes
