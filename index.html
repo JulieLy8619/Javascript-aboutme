@@ -3,13 +3,16 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>About Julie in aboutme folder</title>
+    <title>About Julie</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="css\style.css" type= "text/css">
 </head>
 <body>
-<ol>
+
+    <h1>Pop quiz about Julie</h1>
+
+    <ol>
     <li>Am I a Male? (Answer: No)</li>
     <li>Do I love Chinese food? (Answer: Yes)</li>
     <li>Am I taking Code Fellows 301 (Answer: No)</li>
@@ -34,18 +37,46 @@
 
     //ask food question, answer: Yes
     var foodAnswer = prompt('Do I love chinese food?');
+    if (foodAnswer.toUpperCase() === 'YES' || foodAnswer.toUpperCase() === 'Y') {
+        alert('Yes, I LOOOOOVE Chinese food');
+    } else if (foodAnswer.toUpperCase() === "NO" || foodAnswer.toUpperCase() === 'N') {
+        alert('Good try, maybe I can introduce you to some delicious chinese food');
+    } else {
+        alert('That was not a "yes" or "no" answer');
+    }
     console.log('User\'s answer to if I love Chinese food: ' + foodAnswer)
 
     //ask 301 class question, answer: No
     var classAnswer = prompt('Am I taking Code Fellows 301?');
+    if (classAnswer.toUpperCase() === 'YES' || classAnswer.toUpperCase() === 'Y') {
+        alert('Good try, but we are still in 201');
+    } else if (classAnswer.toUpperCase() === "NO" || classAnswer.toUpperCase() === 'N') {
+        alert('Good job, we are in 201');
+    } else {
+        alert('That was not a "yes" or "no" answer');
+    }
     console.log('User\'s answer to 301 class: ' + classAnswer)
 
     //ask python questions, answer: Yes
     var pythonAnswer = prompt('Do I want to take Python');
+    if (pythonAnswer.toUpperCase() === 'YES' || pythonAnswer.toUpperCase() === 'Y') {
+        alert('Good job, I do plan on Python 401 at Code Fellows');
+    } else if (pythonAnswer.toUpperCase() === "NO" || pythonAnswer.toUpperCase() === 'N') {
+        alert('Good try, but I do plan on Python 401 at Code Fellows');
+    } else {
+        alert('That was not a "yes" or "no" answer');
+    }
     console.log('User\'s answer to python question: ' + pythonAnswer)
 
     //ask amazing question, but its not really a question, there is only one right answer ;), answer: yes
     var amazingAnswer = prompt('Am I AMAZING!?!?!?!?');
+    if (amazingAnswer.toUpperCase() === 'YES' || amazingAnswer.toUpperCase() === 'Y') {
+        alert('Great job, I knew I was amazing and glad others notice too \;\)');
+    } else if (amazingAnswer.toUpperCase() === "NO" || amazingAnswer.toUpperCase() === 'N') {
+        alert('We\'re not going to be good friends, we can change that still');
+    } else {
+        alert('That was not a "yes" or "no" answer');
+    }
     console.log('User\'s answer to if i am amazing: ' + amazingAnswer)
     
 </script>
