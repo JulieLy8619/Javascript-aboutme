@@ -6,15 +6,15 @@
     <title>About Julie in aboutme folder</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="style.css" type= "text/css">
+    <link rel="stylesheet" href="css\style.css" type= "text/css">
 </head>
 <body>
 <ol>
-    <li>Am I a Male?</li>
-    <li>Do I love Chinese food?</li>
-    <li>Am I taking Code Fellows 301</li>
-    <li>Do I want to learn Python</li>
-    <li>Am I amazing?</li>
+    <li>Am I a Male? (Answer: No)</li>
+    <li>Do I love Chinese food? (Answer: Yes)</li>
+    <li>Am I taking Code Fellows 301 (Answer: No)</li>
+    <li>Do I want to learn Python (Answer: Yes)</li>
+    <li>Am I amazing!? (Answer: YES!!! As if that was even a question)</li>
 </ol>
     
 <script>
@@ -22,19 +22,24 @@
     alert("Let's play a game, a guessing game");
 
     //ask Gender question, answer: No
-    alert("Am I a male?");
+    var genderAnswer = prompt('Am I a male?');
+    console.log('User\'s answer to if I am a male: ' + genderAnswer)
 
     //ask food question, answer: Yes
-    alert("Do I love Chinese food?");
+    var foodAnswer = prompt('Do I love chinese food?');
+    console.log('User\'s answer to if I love Chinese food: ' + foodAnswer)
 
     //ask 301 class question, answer: No
-    alert("Am I taking code Fellows 301?");
+    var classAnswer = prompt('Am I taking Code Fellows 301?');
+    console.log('User\'s answer to 301 class: ' + classAnswer)
 
     //ask python questions, answer: Yes
-    alert("Do I want to take Python?");
+    var pythonAnswer = prompt('Do I want to take Python');
+    console.log('User\'s answer to python question: ' + pythonAnswer)
 
     //ask amazing question, but its not really a question, there is only one right answer ;), answer: yes
-    alert("Am I amazing?");
+    var amazingAnswer = prompt('Am I AMAZING!?!?!?!?');
+    console.log('User\'s answer to if i am amazing: ' + amazingAnswer)
     
 </script>
 </body>
