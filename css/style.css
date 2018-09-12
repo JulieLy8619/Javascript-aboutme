@@ -1,3 +1,14 @@
 body {
     background:rgb(204, 15, 119);
 }
+
+ol {
+    background: purple;
+    height: 100px;
+    width: 400px;
+    padding: 50px;
+    text-align: left;
+    border-style: double;
+    border-width: 50px black;
+    border-radius: 50px;
+}
