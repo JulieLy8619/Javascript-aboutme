@@ -1,11 +1,13 @@
+'use strict';
+//self notes about this statement: (will not be in future programs)
 //this ensure we use strict coding like var variablename
 //not strict coding then one could create variables without var
 //tells browser to not run loose code
 //the eslinter will check code based on the file type. like it will check for html code in this file.
 //but it doesn't check for JS code since it is in html
-'use strict';
 
-/* JUST COMMENTING THIS OUT FOR NOW FOR TESTING 
+
+/* 9-13-18 JUST COMMENTING THIS OUT FOR NOW FOR TESTING 
 //ask user name
 var userName = prompt('Greetings and Salutations, what do you call yourself?');
 alert("Nice to meet you, " + userName);
@@ -71,8 +73,6 @@ if (amazingAnswer.toUpperCase() === 'YES' || amazingAnswer.toUpperCase() === 'Y'
 }
 console.log('User\'s answer to if i am amazing: ' + amazingAnswer)
 
-*/
-
 //question 6, guess a number and play too high too low up to 4 times
 var countGuesses = 4;
 var guessedRight = false;
@@ -104,3 +104,8 @@ while (countGuesses > 0) {
 if (guessedRight==false){
     alert('Good effort, my favorite number is 36');
 }
+
+*/
+
+//question 7, has multiple answers, up to 6 guesses, and a comment they got # of # right
+
