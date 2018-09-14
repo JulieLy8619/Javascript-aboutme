@@ -4,7 +4,8 @@
 //the eslinter will check code based on the file type. like it will check for html code in this file.
 //but it doesn't check for JS code since it is in html
 'use strict';
-/* JUST COMMENTING THIS OUT FOR NOW FOR TESTING
+
+/* JUST COMMENTING THIS OUT FOR NOW FOR TESTING 
 //ask user name
 var userName = prompt('Greetings and Salutations, what do you call yourself?');
 alert("Nice to meet you, " + userName);
@@ -69,18 +70,33 @@ if (amazingAnswer.toUpperCase() === 'YES' || amazingAnswer.toUpperCase() === 'Y'
     alert('That was not a "yes" or "no" answer');
 }
 console.log('User\'s answer to if i am amazing: ' + amazingAnswer)
+
 */
+
 //question 6, guess a number and play too high too low up to 4 times
-var userGuess = prompt('What is my FAVORITE number?');
-var juliesRealAnswer = 36;
 var countGuesses = 4;
 
-If (userGuess < 36) {
-    alert ('Good guess, but my favorite number is higher');
-} else if (userGuess > 36) {
-    alert ('Good guess, but my favorite number is lower');
-} else if (userGuess = 36) {
-    alert ('Ta-Da! Confetti! Balloons! You got it, 36 is my favorite number');
-} else {
-    alert ('You need to guess a number');
+while (countGuesses > 0) {
+    var userGuess = prompt('What is my FAVORITE number? Note: ' + countGuesses + ' guesses left');
+    /*var guessValidated = parseInt(userGuess);
+    console.log('VALIDATE GUESS', guessValidated);
+
+    if (!guessValidated){
+        alert('it has to be a number!')
+    }*/
+    if (userGuess == 36) {
+        alert ('Ta-D!a Confetti! Balloons! You got it, 36 is my favorite number');
+        countGuesses = -10;
+    } else if (userGuess > 36) {
+        alert ('Good guess, but my favorite number is lower');
+    } else if (userGuess < 36) {
+        alert ('Good guess, but my favorite number is higher');
+    } else {
+        alert ('You need to guess a number');
+    }
+        
+
+    countGuesses--;
+    console.log('guess ' + userGuess, typeof userGuess)
+    console.log('count guesses ' + countGuesses)
 }

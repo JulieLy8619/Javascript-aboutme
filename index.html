@@ -9,76 +9,49 @@
     <link rel="stylesheet" href="css\style.css" type= "text/css">
 </head>
 <body>
+    <!-- GOAL for lab 3: get this image thing to work
+    <img src="img/20160108_223805.jpg" alt="picture of Julie" style="image-orientation: 90deg;" height=50px width=40px>
+    -->
+    <h1>Julie's Bio</h1>
 
-    <h1>Pop quiz about Julie</h1>
+    <h2>Welcome to my page! It is a work in progress</h2>
+
+    <!--
+    <p>I graduated in 2008 with a combined degree in Accounting & Computer Science.<br>
+    I have been working in Accounting for the last 9 years and am looking to switch to the tech industry now.<br>
+    I love to eat, I love to play soccer, and I love my friends & family.</p>
+    -->
+
+    <ul>
+        <li>2008 Degree in Accounting & Computer Science</li>
+        <li>Accounting background</li>
+    </ul>
+
+    <h4>Pop quiz about Julie</h4>
 
     <ol>
-    <li>Am I a Male? (Answer: No)</li>
-    <li>Do I love Chinese food? (Answer: Yes)</li>
-    <li>Am I taking Code Fellows 301 (Answer: No)</li>
-    <li>Do I want to learn Python (Answer: Yes)</li>
-    <li>Am I amazing!? (Answer: YES!!! As if that was even a question)</li>
-</ol>
-    
-<script>
-    //tell user I am quizzing them
-    alert("Let's play a game, a guessing game");
+        <li>Am I a Male? (Answer: No)</li>
+        <li>Do I love Chinese food? (Answer: Yes)</li>
+        <li>Am I taking Code Fellows 301 (Answer: No)</li>
+        <li>Do I want to learn Python (Answer: Yes)</li>
+        <li>Am I amazing!? (Answer: YES!!! As if that was even a question)</li>
+    </ol>
 
-    //ask Gender question, answer: No
-    var genderAnswer = prompt('Am I a male?');
-    if (genderAnswer.toUpperCase() === 'YES' || genderAnswer.toUpperCase() === 'Y') {
-        alert('Good try, but I am a female');
-    } else if (genderAnswer.toUpperCase() === "NO" || genderAnswer.toUpperCase() === 'N') {
-        alert('Good job, I am a female');
-    } else {
-        alert('That was not a "yes" or "no" answer');
-    }
-    console.log('User\'s answer to if I am a male: ' + genderAnswer)
+    <h4>Top 10 (NEED TO COME BACK AND FILL IN)</h4>
+    <ol>
+        <li>blah</li>
+        <li>blah</li>
+        <li>blah</li>
+        <li>blah</li>
+        <li>blah</li>
+        <li>blah</li>
+        <li>blah</li>
+        <li>blah</li>
+        <li>blah</li>
+        <li>blah</li>
+    </ol>
+ 
+    <script src="js/app.js"></script>
 
-    //ask food question, answer: Yes
-    var foodAnswer = prompt('Do I love chinese food?');
-    if (foodAnswer.toUpperCase() === 'YES' || foodAnswer.toUpperCase() === 'Y') {
-        alert('Yes, I LOOOOOVE Chinese food');
-    } else if (foodAnswer.toUpperCase() === "NO" || foodAnswer.toUpperCase() === 'N') {
-        alert('Good try, maybe I can introduce you to some delicious chinese food');
-    } else {
-        alert('That was not a "yes" or "no" answer');
-    }
-    console.log('User\'s answer to if I love Chinese food: ' + foodAnswer)
-
-    //ask 301 class question, answer: No
-    var classAnswer = prompt('Am I taking Code Fellows 301?');
-    if (classAnswer.toUpperCase() === 'YES' || classAnswer.toUpperCase() === 'Y') {
-        alert('Good try, but we are still in 201');
-    } else if (classAnswer.toUpperCase() === "NO" || classAnswer.toUpperCase() === 'N') {
-        alert('Good job, we are in 201');
-    } else {
-        alert('That was not a "yes" or "no" answer');
-    }
-    console.log('User\'s answer to 301 class: ' + classAnswer)
-
-    //ask python questions, answer: Yes
-    var pythonAnswer = prompt('Do I want to take Python');
-    if (pythonAnswer.toUpperCase() === 'YES' || pythonAnswer.toUpperCase() === 'Y') {
-        alert('Good job, I do plan on Python 401 at Code Fellows');
-    } else if (pythonAnswer.toUpperCase() === "NO" || pythonAnswer.toUpperCase() === 'N') {
-        alert('Good try, but I do plan on Python 401 at Code Fellows');
-    } else {
-        alert('That was not a "yes" or "no" answer');
-    }
-    console.log('User\'s answer to python question: ' + pythonAnswer)
-
-    //ask amazing question, but its not really a question, there is only one right answer ;), answer: yes
-    var amazingAnswer = prompt('Am I AMAZING!?!?!?!?');
-    if (amazingAnswer.toUpperCase() === 'YES' || amazingAnswer.toUpperCase() === 'Y') {
-        alert('Great job, I knew I was amazing and glad others notice too \;\)');
-    } else if (amazingAnswer.toUpperCase() === "NO" || amazingAnswer.toUpperCase() === 'N') {
-        alert('We\'re not going to be good friends, we can change that still');
-    } else {
-        alert('That was not a "yes" or "no" answer');
-    }
-    console.log('User\'s answer to if i am amazing: ' + amazingAnswer)
-    
-</script>
 </body>
 </html>

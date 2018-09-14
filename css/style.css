@@ -10,6 +10,7 @@ h2 {
     color:rgb(2, 102, 2);
 }
 
+/*need to change style or add a id or class so both lists aren't in the same box size*/
 ol {
     background: rgb(182, 65, 182);
     height: 100px;
