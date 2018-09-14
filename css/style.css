@@ -1,9 +1,17 @@
 body {
-    background:rgb(204, 15, 119);
+    background:rgb(240, 117, 184);
+}
+
+h1 {
+    color: rgb(4, 34, 206);
+}
+
+h2 {
+    color:rgb(2, 102, 2);
 }
 
 ol {
-    background: purple;
+    background: rgb(182, 65, 182);
     height: 100px;
     width: 400px;
     padding: 50px;
