@@ -5,6 +5,11 @@
 //but it doesn't check for JS code since it is in html
 'use strict';
 
+//ask user name
+var userName = prompt('Greetings and Salutations, what do you call yourself?');
+alert("Nice to meet you, " + userName);
+console.log('User\'s name: ' + userName)
+
 //tell user I am quizzing them
 alert("Let's play a game, a guessing game");
 
