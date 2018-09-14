@@ -75,18 +75,20 @@ console.log('User\'s answer to if i am amazing: ' + amazingAnswer)
 
 //question 6, guess a number and play too high too low up to 4 times
 var countGuesses = 4;
+var guessedRight = false;
 
 while (countGuesses > 0) {
     var userGuess = prompt('What is my FAVORITE number? Note: ' + countGuesses + ' guesses left');
-    /*var guessValidated = parseInt(userGuess);
-    console.log('VALIDATE GUESS', guessValidated);
 
-    if (!guessValidated){
-        alert('it has to be a number!')
-    }*/
+    //this is to check there was a guess even done
+    while (!userGuess){
+        var userGuess = prompt('You need to make a guess of SOMETHING...');
+    }
+
     if (userGuess == 36) {
         alert ('Ta-D!a Confetti! Balloons! You got it, 36 is my favorite number');
-        countGuesses = -10;
+        countGuesses = -10; //so i escape the loop
+        guessedRight = true; //so i know if I need to tell them the right answer later or not
     } else if (userGuess > 36) {
         alert ('Good guess, but my favorite number is lower');
     } else if (userGuess < 36) {
@@ -94,9 +96,11 @@ while (countGuesses > 0) {
     } else {
         alert ('You need to guess a number');
     }
-        
-
     countGuesses--;
-    console.log('guess ' + userGuess, typeof userGuess)
+    console.log('users guess ' + userGuess)
     console.log('count guesses ' + countGuesses)
+}
+
+if (guessedRight==false){
+    alert('Good effort, my favorite number is 36');
 }
