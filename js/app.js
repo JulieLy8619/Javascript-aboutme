@@ -112,7 +112,8 @@ var countGuessesQ7 = 6;
 var numRight = 0;
 var userGuessQ7 = prompt('Where is a top destinations of mine? You have 6 guesses, may the odds ever be in your favor');
 var userAnswerArray = [userGuessQ7];
-console.log('user array ' + userAnswerArray)
+console.log('start user array ' + userAnswerArray)
+var juliesAnswers= ['disneyland','disneyworld','thailand','sweeden','japan','vegas','iceland','greenland']
 
 //collects users answers and enters it into an array
 for (var i = 1; i < 6; i++) {
@@ -124,28 +125,31 @@ for (var i = 1; i < 6; i++) {
 
     userGuessQ7= prompt('Where is a top destinations of mine? You have ' + (countGuessesQ7-1) + ' guesses left');
     userAnswerArray[i] = userGuessQ7;
+    console.log('user array ' + userAnswerArray)
     //console.log(userAnswerArray.length)
+
+    //compares users answers to real answers
+    for (var j=0; j<juliesAnswers.length; j++){
+        //console.log('in j loop '+j)
+        //console.log('julies guess in j loop ' + juliesAnswers[j])
+        //this extra loop was because I was doing a cycle through the arrays after the whole array was populated, and i am bad at deleting code. I will git this and then clear it.
+        //for (var k=0; k<userAnswerArray.length; k++){
+            //console.log('in k loop '+k)
+            //console.log('users guess in k loop ' + userAnswerArray[k])
+            //console.log('julies guess in jk loop ' + juliesAnswers[j])
+            if(userGuessQ7.toLowerCase() == juliesAnswers[j]) {
+                alert('Great job, ' + userGuessQ7 + ' is one');
+                //console.log('users guess in array in comparison ' + userAnswerArray[k])
+                console.log('julies guess in array in comparison ' + juliesAnswers[j])
+                numRight++;
+            }
+        //}
+    }
+
     console.log('user array ' + userAnswerArray)
     countGuessesQ7--;
-    console.log('users guess ' + userGuessQ7)
+    //console.log('users guess ' + userGuessQ7)
     console.log('count guesses ' + countGuessesQ7)
-}
-
-//compares users answers to real answers
-var juliesAnswers= ['disneyland','disneyworld','thailand','sweeden','japan','vegas','iceland','greenland']
-for (var j=0; j<juliesAnswers.length; j++){
-    //console.log('in j loop '+j)
-    //console.log('julies guess in j loop ' + juliesAnswers[j])
-    for (var k=0; k<userAnswerArray.length; k++){
-        //console.log('in k loop '+k)
-        //console.log('users guess in k loop ' + userAnswerArray[k])
-        //console.log('julies guess in jk loop ' + juliesAnswers[j])
-        if(userAnswerArray[k].toLowerCase() == juliesAnswers[j]) {
-            console.log('users guess in array in comparison ' + userAnswerArray[k])
-            console.log('julies guess in array in comparison ' + juliesAnswers[j])
-            numRight++;
-        }
-    }
 }
 
 
