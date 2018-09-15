@@ -1,13 +1,5 @@
 'use strict';
-//self notes about this statement: (will not be in future programs)
-//this ensure we use strict coding like var variablename
-//not strict coding then one could create variables without var
-//tells browser to not run loose code
-//the eslinter will check code based on the file type. like it will check for html code in this file.
-//but it doesn't check for JS code since it is in html
 
-
-/* 9-13-18 JUST COMMENTING THIS OUT FOR NOW FOR TESTING 
 //ask user name
 var userName = prompt('Greetings and Salutations, what do you call yourself?');
 alert("Nice to meet you, " + userName);
@@ -105,8 +97,6 @@ if (guessedRight==false){
     alert('Good effort, my favorite number is 36');
 }
 
-*/
-
 //question 7, has multiple answers, up to 6 guesses, and a comment they got # of # right
 var countGuessesQ7 = 6;
 var numRight = 0;
@@ -132,18 +122,12 @@ for (var i = 1; i < 6; i++) {
     for (var j=0; j<juliesAnswers.length; j++){
         //console.log('in j loop '+j)
         //console.log('julies guess in j loop ' + juliesAnswers[j])
-        //this extra loop was because I was doing a cycle through the arrays after the whole array was populated, and i am bad at deleting code. I will git this and then clear it.
-        //for (var k=0; k<userAnswerArray.length; k++){
-            //console.log('in k loop '+k)
-            //console.log('users guess in k loop ' + userAnswerArray[k])
-            //console.log('julies guess in jk loop ' + juliesAnswers[j])
-            if(userGuessQ7.toLowerCase() == juliesAnswers[j]) {
-                alert('Great job, ' + userGuessQ7 + ' is one');
-                //console.log('users guess in array in comparison ' + userAnswerArray[k])
-                console.log('julies guess in array in comparison ' + juliesAnswers[j])
-                numRight++;
-            }
-        //}
+        if(userGuessQ7.toLowerCase() == juliesAnswers[j]) {
+            alert('Great job, ' + userGuessQ7 + ' is one');
+            //console.log('users guess in array in comparison ' + userAnswerArray[k])
+            console.log('julies guess in array in comparison ' + juliesAnswers[j])
+            numRight++;
+        }
     }
 
     console.log('user array ' + userAnswerArray)
@@ -151,7 +135,6 @@ for (var i = 1; i < 6; i++) {
     //console.log('users guess ' + userGuessQ7)
     console.log('count guesses ' + countGuessesQ7)
 }
-
 
 //tells them how many right and answers
 if (numRight>0){
