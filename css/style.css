@@ -1,19 +1,37 @@
 body {
-    background:rgb(240, 117, 184);
+    background:rgb(203, 104, 233);
+    width: 500px;
 }
 
 h1 {
-    color: rgb(4, 34, 206);
+    color: rgb(35, 0, 68);
 }
 
 h2 {
-    color:rgb(2, 102, 2);
+    color:rgb(35, 0, 68);
+}
+
+h4 {
+    color:white;
+    background:rgb(35, 0, 68);
+    width:500px;
 }
 
 /*need to change style or add a id or class so both lists aren't in the same box size*/
-ol {
-    background: rgb(182, 65, 182);
+#quizOL {
+    background: rgb(129, 121, 245);
     height: 100px;
+    width: 400px;
+    padding: 50px;
+    text-align: left;
+    border-style: double;
+    border-width: 50px black;
+    border-radius: 50px;
+}
+
+#topOL {
+    background: rgb(129, 121, 245);
+    height: 200px;
     width: 400px;
     padding: 50px;
     text-align: left;

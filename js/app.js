@@ -108,4 +108,38 @@ if (guessedRight==false){
 */
 
 //question 7, has multiple answers, up to 6 guesses, and a comment they got # of # right
+var countGuessesQ7 = 6;
+var numRight = 0;
+var userGuessQ7 = prompt('Where is a top destinations of mine? You have 6 chances, may the odds ever be in your favor');
+var userAnswerArray = [userGuessQ7];
 
+//collects users answers and enters it into an array
+for (i=1; i<6 ;i++)
+    //this is to check there was a guess even done
+    while (!userGuessQ7){
+        var userGuessQ7 = prompt('You need to make a guess...else Welcome to the INFINITE LOOP OF DOOOOOOOOM...');
+    }
+    userAnswerArray[i] = prompt('Where is a top destinations of mine? You have ' + countGuessesQ7-1 + ' chances left');
+    console.log('users guess ' + userGuessQ7)
+    console.log('count guesses ' + countGuessesQ7)
+
+
+//compares users answers to real answers
+var juliesAnswers= ['disneyland','disneyworld','thailand','sweeden','japan','vegas','iceland','greenland']
+for (j=o; j<juliesAnswers.length; j++){
+    for (k=0; k<userAnswerArray.length; k++){
+        if(userAnswerArray.toLowerCase[k] === juliesAnswers[j]) {
+            console.log('users guess in array ' + userAnswerArray.toLowerCase[k])
+            console.log('julies guess in array' + juliesAnswers[j])
+            numRight++;
+        }
+    }
+}
+
+
+//tells them how many right and answers
+if (numRight>0){
+    alert('You got ' + numRight + ' right out of 6');
+} else {
+    alert('The possible answers were: Disneyland or Disneyworld, Thailand, Sweeden, Japan, Vegas, Iceland, Greenland');
+}
