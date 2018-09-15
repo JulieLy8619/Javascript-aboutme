@@ -59,7 +59,7 @@ var amazingAnswer = prompt('Am I AMAZING!?!?!?!?');
 if (amazingAnswer.toUpperCase() === 'YES' || amazingAnswer.toUpperCase() === 'Y') {
     alert('Great job, I knew I was amazing and glad others notice too \;\)');
 } else if (amazingAnswer.toUpperCase() === "NO" || amazingAnswer.toUpperCase() === 'N') {
-    alert('We\'re not going to be good friends, we can change that still');
+    alert('Clearly you don\'t know me well enough yet, because I am AMAZING');
 } else {
     alert('That was not a "yes" or "no" answer');
 }
@@ -86,7 +86,7 @@ while (countGuesses > 0) {
     } else if (userGuess < 36) {
         alert ('Good guess, but my favorite number is higher');
     } else {
-        alert ('You need to guess a number');
+        alert ('You were supposed to guess a number');
     }
     countGuesses--;
     console.log('users guess ' + userGuess)
@@ -103,7 +103,7 @@ var numRight = 0;
 var userGuessQ7 = prompt('Where is a top destinations of mine? You have 6 guesses, may the odds ever be in your favor');
 var userAnswerArray = [userGuessQ7];
 console.log('start user array ' + userAnswerArray)
-var juliesAnswers= ['disneyland','disneyworld','thailand','sweeden','japan','vegas','iceland','greenland']
+var juliesAnswers= ['disneyland','disneyworld','thailand','sweden','japan','vegas','iceland','greenland']
 
 //collects users answers and enters it into an array
 for (var i = 1; i < 6; i++) {
@@ -113,22 +113,21 @@ for (var i = 1; i < 6; i++) {
         userAnswerArray[(i-1)] = userGuessQ7;
     }
 
-    userGuessQ7= prompt('Where is a top destinations of mine? You have ' + (countGuessesQ7-1) + ' guesses left');
-    userAnswerArray[i] = userGuessQ7;
-    console.log('user array ' + userAnswerArray)
-    //console.log(userAnswerArray.length)
-
     //compares users answers to real answers
     for (var j=0; j<juliesAnswers.length; j++){
         //console.log('in j loop '+j)
         //console.log('julies guess in j loop ' + juliesAnswers[j])
         if(userGuessQ7.toLowerCase() == juliesAnswers[j]) {
             alert('Great job, ' + userGuessQ7 + ' is one');
-            //console.log('users guess in array in comparison ' + userAnswerArray[k])
             console.log('julies guess in array in comparison ' + juliesAnswers[j])
             numRight++;
         }
     }
+
+    userGuessQ7= prompt('Where is a top destinations of mine? You have ' + (countGuessesQ7-1) + ' guesses left');
+    userAnswerArray[i] = userGuessQ7;
+    console.log('user array ' + userAnswerArray)
+    //console.log(userAnswerArray.length)
 
     console.log('user array ' + userAnswerArray)
     countGuessesQ7--;
@@ -138,7 +137,7 @@ for (var i = 1; i < 6; i++) {
 
 //tells them how many right and answers
 if (numRight>0){
-    alert('You got ' + numRight + ' right out of 6');
+    alert('Of your 6 guesses, you got ' + numRight + ' right out of 8 places');
     alert('The possible answers were: Disneyland or Disneyworld, Thailand, Sweeden, Japan, Vegas, Iceland, Greenland');
 } else {
     alert('The possible answers were: Disneyland or Disneyworld, Thailand, Sweeden, Japan, Vegas, Iceland, Greenland');

@@ -1,10 +1,20 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: groove;
+    border-width: 15px;
+}
+
 body {
     background:rgb(203, 104, 233);
     width: 500px;
 }
 
 h1 {
-    color: rgb(35, 0, 68);
+    color: rgb(211, 0, 130);
+    text-align: center;
+    text-shadow: px 2px rgb(51, 0, 61);
 }
 
 h2 {
@@ -18,7 +28,7 @@ h4 {
 }
 
 /*need to change style or add a id or class so both lists aren't in the same box size*/
-#quizOL {
+.shortList {
     background: rgb(129, 121, 245);
     height: 100px;
     width: 400px;
