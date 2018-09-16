@@ -136,7 +136,6 @@ var multiGuessGame = function() {
     var juliesAnswers = ['disneyland','disneyworld','thailand','sweden','japan','vegas','iceland','greenland'];
 
     //collects users answers and enters it into an array
-
     do {
         do {
             userGuessQ7= prompt('Where is a top destinations of mine? You have ' + (countGuessesQ7) + ' guesses left');
@@ -145,14 +144,7 @@ var multiGuessGame = function() {
             console.log('user array ' + userAnswerArray);
         } while(!userGuessQ7);
         countGuessesQ7--;
-    //console.log(userAnswerArray.length)
-
-    //   for (var i = 1; i < 6; i++) {
-        //this is to check there was a guess even done
-        // while (!userGuessQ7){
-        //     var userGuessQ7 = prompt('You need to make a guess...else Welcome to the INFINITE LOOP OF DOOOOOOOOM...');
-        //     userAnswerArray[(i-1)] = userGuessQ7;
-        // }
+        //console.log(userAnswerArray.length)
 
         //compares users answers to real answers
         for (var j=0; j<juliesAnswers.length; j++){
@@ -164,10 +156,7 @@ var multiGuessGame = function() {
                 console.log('Q7 ' + totalAllQuestionsRight);
                 console.log('julies guess in array in comparison ' + juliesAnswers[j]);
                 numRight++;
-            } /*else {
-               alert('Good try, but ' + userGuessQ7 + ' is not one')
-               console.log ('did not match comparison '+ userGuessQ7)
-            } */
+            } 
         }
 
         console.log('user array ' + userAnswerArray);
@@ -186,9 +175,7 @@ var multiGuessGame = function() {
     }
     console.log('num right ' + numRight);
 }
-    //alert('Thank you for taking my quiz you got ' + totalAllQuestionsRight + ' right of 12.');
-
-
+ 
 //*********call functions**********//
 getName();
 
