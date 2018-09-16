@@ -190,18 +190,18 @@ var multiGuessGame = function() {
 
 
 //*********call functions**********//
-//getName();
+getName();
 
 ////tell user I am quizzing them
-// alert("Let's play a game, a guessing game");
+alert("Let's play a game, a guessing game");
 
-// getGenderAnswer();
-// getFoodAnswer();
-// getClassAnswer();
-// getPythonAnswer();
-// getAmazingAnswer();
-// guessNumGame();
+getGenderAnswer();
+getFoodAnswer();
+getClassAnswer();
+getPythonAnswer();
+getAmazingAnswer();
+guessNumGame();
 multiGuessGame();
 
 //tell them how they did (12 because 6 questions plus the 6 from my question 7, so 12)
-//alert('Thank you for taking my quiz you got ' + totalAllQuestionsRight + ' right of 12.');
+alert('Thank you for taking my quiz you got ' + totalAllQuestionsRight + ' right of 12.');
