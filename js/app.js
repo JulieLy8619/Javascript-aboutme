@@ -99,7 +99,7 @@ var guessNumGame = function() {
 
 				//this is to check there was a guess even done
 				while (!userGuess){
-						var userGuess = prompt('You need to make a guess of SOMETHING...');
+						userGuess = prompt('You need to make a guess of SOMETHING...');
 				}
 
 				if (userGuess == 36) {
